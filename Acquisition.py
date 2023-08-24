@@ -31,8 +31,8 @@ def main():
     # Uncomment one of these lines to choose between Launch12 or gps-sdr-sim data
 
     # /home/evan/Capstone/gps/resources/JGPS@-32.041913222
-    data.importFile('./resources/JGPS@04.559925043', GPS_fs, sampleLength, bytesToSkip)
-    #data.importFile('./resources/JGPS@-32.041913222', GPS_fs, sampleLength, bytesToSkip)
+    #data.importFile('./resources/JGPS@04.559925043', GPS_fs, sampleLength, bytesToSkip)
+    data.importFile('./resources/JGPS@-32.041913222', GPS_fs, sampleLength, bytesToSkip)
     #data.importFile('../resources/test.max', GPS_fs, sampleLength, bytesToSkip)
 
     results = acquire(data,block_size_ms=numberOfMilliseconds)

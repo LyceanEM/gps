@@ -178,7 +178,7 @@ class IQData:
         '''
         Returns array of complex data
         '''
-        self.CData = np.zeros(len(self.IData), dtype=np.complex)
+        self.CData = np.zeros(len(self.IData), dtype=complex)
         self.CData = np.array(self.IData) + np.array(self.QData) * 1j  # Complex data
         return
 
